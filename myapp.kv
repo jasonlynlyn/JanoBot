@@ -1,0 +1,37 @@
+
+
+<ChatWindow>:
+	id: chatwindow
+	display: entry
+	rows:2 
+	padding:10
+	spacing:10
+	size:300,300
+	
+
+	
+	GridLayout:
+		display: entry
+		font_size: 15
+		size: root.size
+		id: entry
+		multiline: False
+
+	BoxLayout:
+		size_hint:(.25, .12)
+		pos:(20,20)
+		TextInput:
+			font_size: 20
+			id: entry
+			multiline: True
+
+					
+		Button:
+			text:"Send"
+			font_size: 20
+			size_hint:(.1, 1)
+			pos:(80, 20)
+			on_press:entry.
+			
+		
+		
